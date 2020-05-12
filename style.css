@@ -1,0 +1,121 @@
+.sidebar-wrapper {
+  border-right: 1px solid #D1CDCC;
+}
+
+.profile {
+  padding: 3rem 0;
+}
+
+.profile-picture {
+  height: 70px;
+  width: 70px;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 0.5rem;
+  opacity: 0.5;
+}
+
+.user-profile {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.list-actions {
+  padding: 2rem 0;
+  border-top: 1px solid #D1CDCC;
+}
+
+.show-calendar, .add-food {
+  background: transparent;
+  border: none;
+}
+
+.show-calendar svg, .add-food svg {
+  height: 30px;
+  width: 30px;
+  opacity: 0.5;
+  transition: all 1s ease-in;
+}
+
+.show-calendar svg:hover, .add-food svg:hover {
+  opacity: 1;
+}
+
+.date-picker {
+  display: none;
+}
+
+.date-picker__input {
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  opacity: 0.5;
+  transition: all 1s ease-in;
+}
+
+.date-picker__input:focus {
+  opacity: 1;
+}
+
+.food-list-logs__item{
+  border-left: none;
+  border-right: none;
+}
+
+.food-name {
+  font-weight: bolder;
+}
+
+.food-search__container {
+  padding: 1.2rem 0;
+}
+
+
+.food-search__container__input {
+  border: 1px solid #6c757d;
+  border-radius: .25rem;
+  opacity: 0.3;
+  outline: none;
+  transition: all 1s ease-in;
+  margin-bottom: 1.2rem;
+}
+
+.food-search__container__input:focus {
+  opacity: 1;
+}
+
+@media (min-width: 576px) {
+  .food-search__container__input {
+    margin-bottom: 0;
+  }
+}
+
+.macros-list {
+  padding: 0.8rem 0;
+}
+
+.macros-list li {
+  padding: 0.5rem;
+  background: #E9E4E3;
+}
+
+.chart-options {
+  padding: 1.2rem;
+}
+
+.chart-options__kcal, .chart-options__macros {
+  position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    background-color: #fff;
+}
+
+.chart-options__kcal {
+  display: none;
+}
+
+#lineChart {
+  display: none;
+}

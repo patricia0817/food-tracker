@@ -1,0 +1,25 @@
+{
+  "name": "food-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "chart.js": "^2.9.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patricia0817/food-tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patricia0817/food-tracker/issues"
+  },
+  "homepage": "https://github.com/patricia0817/food-tracker#readme"
+}
