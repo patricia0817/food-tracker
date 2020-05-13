@@ -29,23 +29,7 @@
             </span>
           </section>
           <section class="food-list col-12 text-center">
-            <div class="list-actions d-flex justify-content-between">
-              <button class="show-calendar">
-                <svg class="bi bi-calendar" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd"
-                        d="M14 0H2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"
-                        clip-rule="evenodd" />
-                  <path fill-rule="evenodd"
-                        d="M6.5 7a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm-9 3a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm-9 3a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2z"
-                        clip-rule="evenodd" />
-                </svg>
-              </button>
-              <form action="/" class="date-picker">
-                <label for="calendar"></label>
-                <input class="date-picker__input" type="date" id="calendar" name="calendar">
-                <input class="date-picker__submit btn btn-secondary" type="submit">
-              </form>
+            <div class="list-actions text-center">
               <button class="add-food" data-toggle="modal" data-target="#addLogModal">
                 <svg class="bi bi-plus-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
                      xmlns="http://www.w3.org/2000/svg">
@@ -72,182 +56,34 @@
                     <div class="modal-body">
                       <div class="container">
                         <div class="food-search__container d-flex justify-content-between row">
-                          <input type="search" id="food-search"
-                                 class="food-search__container__input col-md-8 col-sm-12" />
-                          <button type="button" class="btn btn-secondary col-md-3 col-sm-12">Search</button>
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">
+                                <svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16"
+                                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd"
+                                        d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
+                                        clip-rule="evenodd" />
+                                  <path fill-rule="evenodd"
+                                        d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                              </span>
+                            </div>
+                            <input type="search" class="form-control food-search__container__input" id="food-search"
+                                   placeholder="Search food" aria-label="search" aria-describedby="basic-addon1"
+                                   value=''>
+                          </div>
                         </div>
                       </div>
-                      <div class="list-group search-list">
-                        <button type="button" class="list-group-item list-group-item-action" data-dismiss="modal">
-                          <h5 class="search-list__item__title">Brocoli</h5>
-                          <span class="search-list__item__content  d-flex justify-content-between">
-                            <span class="description">
-                              <span class="description__brand">Bonduelle</span>
-                              <span class="description__quantity">
-                                26
-                                <span class="description__quantity__units">g</span>
-                              </span>
-                            </span>
-                            <span class="kcal">31</span>
-                          </span>
-                        </button>
-                        <button type="button" class="list-group-item list-group-item-action" data-dismiss="modal">
-                          <h5 class="search-list__item__title">Brocoli</h5>
-                          <span class="search-list__item__content  d-flex justify-content-between">
-                            <span class="description">
-                              <span class="description__brand">Bonduelle</span>
-                              <span class="description__quantity">
-                                26
-                                <span class="description__quantity__units">g</span>
-                              </span>
-                            </span>
-                            <span class="kcal">31</span>
-                          </span>
-                        </button>
-                        <button type="button" class="list-group-item list-group-item-action" data-dismiss="modal">
-                          <h5 class="search-list__item__title">Brocoli</h5>
-                          <span class="search-list__item__content  d-flex justify-content-between">
-                            <span class="description">
-                              <span class="description__brand">Bonduelle</span>
-                              <span class="description__quantity">
-                                26
-                                <span class="description__quantity__units">g</span>
-                              </span>
-                            </span>
-                            <span class="kcal">31</span>
-                          </span>
-                        </button>
-                        <button type="button" class="list-group-item list-group-item-action" data-dismiss="modal">
-                          <h5 class="search-list__item__title">Brocoli</h5>
-                          <span class="search-list__item__content  d-flex justify-content-between">
-                            <span class="description">
-                              <span class="description__brand">Bonduelle</span>
-                              <span class="description__quantity">
-                                26
-                                <span class="description__quantity__units">g</span>
-                              </span>
-                            </span>
-                            <span class="kcal">31</span>
-                          </span>
-                        </button>
-                        <button type="button" class="list-group-item list-group-item-action" data-dismiss="modal">
-                          <h5 class="search-list__item__title">Brocoli</h5>
-                          <span class="search-list__item__content  d-flex justify-content-between">
-                            <span class="description">
-                              <span class="description__brand">Bonduelle</span>
-                              <span class="description__quantity">
-                                26
-                                <span class="description__quantity__units">g</span>
-                              </span>
-                            </span>
-                            <span class="kcal">31</span>
-                          </span>
-                        </button>
-                      </div>
+                      <div class="list-group search-list"></div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="food-list-logs__wrapper">
-              <ul class="food-list-logs list-group text-left">
-                <li class="food-list-logs__item list-group-item">
-                  <span class="food-name">Brocoli</span>
-                  <ul class="text-center macros-list list-group list-group-horizontal">
-                    <li class="list-group-item">
-                      <div class="food-macros__kcal">
-                        <span class="quantity">320</span>
-                        <span class="quantity-unit">kcal</span>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="food-macros__carbs">
-                        <span class="quantity">20</span>
-                        <span class="quantity-unit">g</span>
-                        <sub>Carbs</sub>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="food-macros__protein">
-                        <span class="quantity">32</span>
-                        <span class="quantity-unit">g</span>
-                        <sub>Protein</sub>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="food-macros__fat">
-                        <span class="quantity">11</span>
-                        <span class="quantity-unit">g</span>
-                        <sub>Fat</sub>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li class="food-list-logs__item list-group-item">
-                  <span class="food-name">Brocoli</span>
-                  <ul class="text-center macros-list list-group list-group-horizontal">
-                    <li class="list-group-item">
-                      <div class="food-macros__kcal">
-                        <span class="quantity">320</span>
-                        <span class="quantity-unit">kcal</span>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="food-macros__carbs">
-                        <span class="quantity">20</span>
-                        <span class="quantity-unit">g</span>
-                        <sub>Carbs</sub>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="food-macros__protein">
-                        <span class="quantity">32</span>
-                        <span class="quantity-unit">g</span>
-                        <sub>Protein</sub>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="food-macros__fat">
-                        <span class="quantity">11</span>
-                        <span class="quantity-unit">g</span>
-                        <sub>Fat</sub>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li class="food-list-logs__item list-group-item">
-                  <span class="food-name">Brocoli</span>
-                  <ul class="text-center macros-list list-group list-group-horizontal">
-                    <li class="list-group-item">
-                      <div class="food-macros__kcal">
-                        <span class="quantity">320</span>
-                        <span class="quantity-unit">kcal</span>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="food-macros__carbs">
-                        <span class="quantity">20</span>
-                        <span class="quantity-unit">g</span>
-                        <sub>Carbs</sub>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="food-macros__protein">
-                        <span class="quantity">32</span>
-                        <span class="quantity-unit">g</span>
-                        <sub>Protein</sub>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="food-macros__fat">
-                        <span class="quantity">11</span>
-                        <span class="quantity-unit">g</span>
-                        <sub>Fat</sub>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+              <ul class="food-list-logs list-group text-left"></ul>
             </div>
           </section>
         </aside>
@@ -280,10 +116,10 @@
               </li>
             </ul>
           </nav>
-          <section class="chart">
+          <section class="pie-chart">
             <canvas id="pieChart" width="400" height="400">Your browser does not support the canvas element.</canvas>
           </section>
-          <section class="chart">
+          <section class="line-chart">
             <canvas id="lineChart" width="400" height="400">Your browser does not support the canvas element.</canvas>
           </section>
         </main>

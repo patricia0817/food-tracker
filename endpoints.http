@@ -1,0 +1,2 @@
+// get food
+GET https://datastore-1ede4.firebaseio.com/foodList.json
