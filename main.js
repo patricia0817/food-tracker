@@ -144,10 +144,10 @@ renderLineChart = () => {
   var myLineChart = new Chart( ctx, {
     type: 'line',
     data: {
-      labels: [ '02/13', '02/27', '03/12', '04/09', '04/23', '05/7' ],
+      labels: [ ...selectedFoods.map( ( f, i ) => i ) ],
       datasets: [ {
         fill: false,
-        label: 'Last 3 Months',
+        label: 'Kcal Consumption',
         data: kcalData,
         backgroundColor: 'rgba(54, 162, 235, 1)',
         borderColor: [
